@@ -1,0 +1,16 @@
+program ProjetoSistemaBruno;
+
+uses
+  Vcl.Forms,
+  UfrmProduto in 'UfrmProduto.pas' {Form2},
+  UfrmTelas in 'UfrmTelas.pas' {Menu};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm2, Form2);
+  Application.CreateForm(TMenu, Menu);
+  Application.Run;
+end.

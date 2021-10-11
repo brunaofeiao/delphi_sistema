@@ -1,0 +1,83 @@
+object Menu: TMenu
+  Left = 0
+  Top = 0
+  Caption = 'Telas'
+  ClientHeight = 242
+  ClientWidth = 505
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  Menu = MainMenu1
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 81
+    Height = 241
+    TabOrder = 0
+    object buttonVendas: TButton
+      Left = 6
+      Top = 8
+      Width = 67
+      Height = 25
+      Caption = 'Vendas'
+      TabOrder = 0
+      OnClick = buttonVendasClick
+    end
+    object buttonClientes: TButton
+      Left = 6
+      Top = 39
+      Width = 67
+      Height = 25
+      Caption = 'Clientes'
+      TabOrder = 1
+    end
+    object buttonEstoque: TButton
+      Left = 6
+      Top = 70
+      Width = 67
+      Height = 25
+      Caption = 'Estoque'
+      TabOrder = 2
+    end
+  end
+  object MainMenu1: TMainMenu
+    Left = 136
+    Top = 24
+    object arquivo1: TMenuItem
+      Caption = 'Arquivo'
+      object salvar1: TMenuItem
+        Caption = 'Abrir'
+      end
+      object editar1: TMenuItem
+        Caption = 'Salvar'
+      end
+      object excluir1: TMenuItem
+        Caption = 'Salvar em'
+      end
+    end
+    object usuario1: TMenuItem
+      Caption = 'Usuario'
+      object Adicionar1: TMenuItem
+        Caption = 'Adicionar '
+      end
+      object EditarUsuarios1: TMenuItem
+        Caption = 'Editar Usuarios'
+      end
+    end
+    object opcoes1: TMenuItem
+      Caption = 'Ajustes'
+      object Parametros1: TMenuItem
+        Caption = 'Parametros'
+      end
+      object Customizacao1: TMenuItem
+        Caption = 'Customizacao'
+      end
+    end
+  end
+end
